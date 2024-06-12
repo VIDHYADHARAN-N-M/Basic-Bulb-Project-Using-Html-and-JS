@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{  
+            text-align: center;
+            margin:30px;
+            padding-top: 30px;
+        }
+        
+        button{
+            padding: 10px;
+            width: 190px;
+        
+        }
+    </style>
+</head>
+<body id="back">
+    <button class="on" onclick="turnon()" >Turn on light</button>
+    <img src="bulbimg\orgon.png" alt="off img" id="light">
+    <button class="off" onclick="turnoff()">Turn off light</button>
+</body>
+</html>
+
+<script>
+   function turnon(){
+        document.getElementById('light').src='bulbimg/orgon.png';
+        document.getElementById('back').style.backgroundColor='white';
+        
+    }
+
+    function turnoff(){
+        document.getElementById("light").src="bulbimg/orgoff.png";
+        document.getElementById('back').style.backgroundColor='black';
+    }
+</script>
